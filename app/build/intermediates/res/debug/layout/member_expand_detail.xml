@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_detail"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/layFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/txtMemName"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+		
+		<TextView
+            android:id="@+id/txtMemCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="right"
+            android:textSize="14sp"
+            style="@android:style/TextAppearance.Small"
+            android:text="Code"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layFirst" >
+
+        <TextView
+            android:id="@+id/txtMemMobileNo"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="MobileNo"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+      <TextView
+          android:id="@+id/txtMemAddres"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/laySecond"
+          android:textColor="@android:color/white"
+          style="@android:style/TextAppearance.Small"
+          android:text="Address"
+          android:textSize="10sp" />
+
+</RelativeLayout><!-- From: file:/E:/AndroidProjects/brief/app/src/main/res/layout/member_expand_detail.xml -->

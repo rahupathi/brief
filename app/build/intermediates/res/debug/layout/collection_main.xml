@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/edit_border"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="30dp"
+            android:text="Collection Date"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="@android:color/white" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="select_Date"
+            android:cropToPadding="true"
+            android:onClick="selectDate"
+            android:src="@drawable/ic_datepicker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="10dp"
+            android:text="Line"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/laySecond"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <Spinner
+            android:id="@+id/collcmbLineName"
+            android:layout_width="216dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_border"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnColGo"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_button"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/btnColBack"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/action_button"
+            android:paddingLeft="4dp"
+            android:text="Back" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/AndroidProjects/brief/app/src/main/res/layout/collection_main.xml -->

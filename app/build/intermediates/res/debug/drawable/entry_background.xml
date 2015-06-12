@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:shape="rectangle"> 
+     <gradient android:startColor="#000000" 
+         android:centerColor="#000000"  
+         android:endColor="#EAC117"
+           /> 
+    <corners android:bottomRightRadius="1dp" android:bottomLeftRadius="1dp" 
+     android:topLeftRadius="1dp" android:topRightRadius="1dp"/> 
+</shape><!-- From: file:/E:/AndroidProjects/brief/app/src/main/res/drawable/entry_background.xml -->

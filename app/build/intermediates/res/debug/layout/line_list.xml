@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingBottom="3dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:paddingTop="3dip" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/edtLineSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/entry_background"
+        android:padding="1dp" >
+
+        <ListView
+            android:id="@+id/lvLineList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp" />
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/E:/AndroidProjects/brief/app/src/main/res/layout/line_list.xml -->
